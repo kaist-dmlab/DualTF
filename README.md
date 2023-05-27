@@ -7,14 +7,14 @@ In light of the remarkable advancements made in time-series anomaly detection (T
 
 
 ## 2. Public Data Sets
-| Name          | # Applications    | # Train  | # Test    | Entity×Dimension | # Point Anomaly(Ratio)      | # Pattern Anomaly(Ratio)| Source           |
-| :------------:| :----------------:| :------: | :-------: |:----------------:| :--------------------------:| :---------------------: |:----------------:|
-| TODS(Point)   | Synthetic         | 20,000   |  5,000    |  2 × 1           | 250 (100%) | 0 (0%)         |[link](https://github.com/datamllab/tods/tree/benchmark)|
-| TODS(Pattern) | Synthetic         | 20,000   |  5,000    |  3 × 1           | 0 (0%)                      | 250 (100%) |[link](https://github.com/datamllab/tods/tree/benchmark)|
-| ASD           | Server Monitoring | 8,527   |  4,320     |  12 × 19         | 0 (0%)                      | 199 (100%) |[link](https://github.com/zhhlee/InterFusion) |
-| ECG           | Medical Checkup   | 6,995   |  2,851     |  9 × 2           | 0 (0%)    | 208 (100%)      |[link](https://www.cs.ucr.edu/~eamonn/discords/)|
-| PSM           | Server Monitoring | 132,481   |  87,841  |  1 × 25          | 16 (0.07%)| 24,365 (99.93%) |[link](https://github.com/eBay/RANSynCoders/tree/main)|
-| Company A     | Server Monitoring | 21,600   |  13,302   |  3 × 8           | 10 (8.53%)                  | 104 (91.47%)            |Private           |
+| Name          | # Applications    | # Train  | # Test    | Entity×Dimension | # Point Anomaly (Ratio)      | # Pattern Anomaly (Ratio)| Source           |
+| :------------:| :----------------:| :------: | :-------: |:----------------:| :---------------------------:| :-----------------------: |:----------------:|
+| TODS(Point)   | Synthetic         | 20,000   |  5,000    |  2 × 1           | 250 (100%) | 0 (0%)          |[link](https://github.com/datamllab/tods/tree/benchmark)|
+| TODS(Pattern) | Synthetic         | 20,000   |  5,000    |  3 × 1           | 0 (0%)                       | 250 (100%) |[link](https://github.com/datamllab/tods/tree/benchmark)|
+| ASD           | Server Monitoring | 8,527   |  4,320     |  12 × 19         | 0 (0%)                       | 199 (100%) |[link](https://github.com/zhhlee/InterFusion) |
+| ECG           | Medical Checkup   | 6,995   |  2,851     |  9 × 2           | 0 (0%)    | 208 (100%)       |[link](https://www.cs.ucr.edu/~eamonn/discords/)|
+| PSM           | Server Monitoring | 132,481   |  87,841  |  1 × 25          | 16 (0.07%)| 24,365 (99.93%)  |[link](https://github.com/eBay/RANSynCoders/tree/main)|
+| Company A     | Server Monitoring | 21,600   |  13,302   |  3 × 8           | 10 (8.53%)                   | 104 (91.47%)            |Private           |
 
 ## 3. Requirements and Installations
 - [Node.js](https://nodejs.org/en/download/): 16.13.2+
