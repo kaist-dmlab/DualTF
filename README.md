@@ -54,4 +54,4 @@ python3 main_freq.py
 e.g.) python3 main.py --gpu_id 6 --form seasonal --seq_length 50 --dataset NeurIPSTS --batch_size 4
 ```
 ## 6. Licence
-Breaking the Time-Frequency Granularity Discrepancy in Time-Series Anomaly Detection © 2023 by Youngeun Nam is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit [[link](http://creativecommons.org/licenses/by-nc-sa/4.0/)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+Breaking the Time-Frequency Granularity Discrepancy in Time-Series Anomaly Detection © 2023 by Youngeun Nam is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit [(http://creativecommons.org/licenses/by-nc-sa/4.0/)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
