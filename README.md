@@ -1,5 +1,3 @@
-# DualTF
-
 # Breaking the Time-Frequency Granularity Discrepancy in Time-Series Anomaly Detection
 
 ## 1. Overview
