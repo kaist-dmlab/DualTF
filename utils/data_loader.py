@@ -38,7 +38,7 @@ def normalization(x):
     return np.array(list(map(lambda x: 1*(x-min_value)/(max_value-min_value), x)))
 
 # Generated fast fourier transformed sequences.
-def torch_fft_trasnform(seq):
+def torch_fft_transform(seq):
     torch_seq = torch.from_numpy(seq)
     # freq length
     tp_cnt = seq.shape[1]
@@ -86,14 +86,14 @@ def generate_UCR_frequency_grandwindow(x_trains, x_tests, y_tests, nest_length, 
         grand_trains, grand_tests, grand_labels = [], [], []
         for grand in range(len(x_trains[num])):
             sub_x_trains = _create_sequences(x_trains[num][grand], nest_length, step)
-            train_sequences, freq = torch_fft_trasnform(sub_x_trains)
+            train_sequences, freq = torch_fft_transform(sub_x_trains)
             grand_trains.append(train_sequences) 
         grand_train = np.array(grand_trains) # (grand_train: (301, 76, 25/2, 1) )
         grand_train_reshaped = grand_train.reshape(grand_train.shape[0], grand_train.shape[1]*grand_train.shape[2], grand_train.shape[3])
         
         for grand in range(len(x_tests[num])):
             sub_x_tests = _create_sequences(x_tests[num][grand], nest_length, step)
-            test_sequences, freq = torch_fft_trasnform(sub_x_tests)
+            test_sequences, freq = torch_fft_transform(sub_x_tests)
             grand_tests.append(test_sequences)
             
             sub_y_tests = _create_sequences(y_tests[num][grand], nest_length, step)
@@ -121,14 +121,14 @@ def generate_frequency_grandwindow(x_trains, x_tests, y_tests, nest_length, step
     # x_trains: (301, 100, 1)
     for grand in range(len(x_trains)):
         sub_x_trains = _create_sequences(x_trains[grand], nest_length, step)
-        train_sequences, freq = torch_fft_trasnform(sub_x_trains)
+        train_sequences, freq = torch_fft_transform(sub_x_trains)
         grand_trains.append(train_sequences) 
     grand_train = np.array(grand_trains) # (grand_train: (301, 76, 25/2, 1) )
     grand_train_reshaped = grand_train.reshape(grand_train.shape[0], grand_train.shape[1]*grand_train.shape[2], grand_train.shape[3])
     
     for grand in range(len(x_tests)):
         sub_x_tests = _create_sequences(x_tests[grand], nest_length, step)
-        test_sequences, freq = torch_fft_trasnform(sub_x_tests)
+        test_sequences, freq = torch_fft_transform(sub_x_tests)
         grand_tests.append(test_sequences)
         
         sub_y_tests = _create_sequences(y_tests[grand], nest_length, step)
