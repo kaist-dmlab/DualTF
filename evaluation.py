@@ -78,8 +78,7 @@ def total_evaluation():
     time_as = normalization(time_rec)
     freq_as = normalization(freq_rec)
 
-    # final_as = time_as + freq_as
-    final_as = time_as
+    final_as = time_as + freq_as
 
     # Point Adjusted Evaluation
     pa_scores = {'dataset': [], 'f1': [], 'precision': [], 'recall': [], 'pr_auc': [], 'roc_auc': []}
